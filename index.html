@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- BASIC -->
+  <!-- TO DO: Make it a secure site to help improve SEO -->
+  <!-- TO DO: Add scroll slow for mobile -->
+  <!-- TO DO: Add the scrolling photo effect for mobile -->
+  <!-- TO DO: Add animate on scroll library -->
+  <!-- TO DO: Add flickity so galleries are swipable from left to right -->
+  <!-- TO DO: Retool Branding language to better communicate proposition -->
+  <!-- TO DO: Add AOS Effects -->
+  <!-- TO DO: Optimize design for mobile -->
+  <!-- TO DO: Add information on workshops given / gallery -->
+  <!-- TO DO: Change cards to be more useful, potentiall different renders across different devices-->
+  <!-- TO DO: Add New Info to Portfolio Cards, Baybe, Loch Ness, Search Bar -->
+  <!-- TO DO: Add competitive edge to webpage -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>S Y &nbsp &nbspR A S H I D</title>
+  <link rel="icon" href="img/logo.png">
+  <meta name="description" content="Full Stack Developer by trade, Engineer by education, Explorer by choice, Child at heart">
+  <meta name="author" content="Sy Rashid">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <!-- CSS -->
+  <link href="css/main.css" rel="stylesheet" type="text/css" media="screen">
+
+  <!--  FACEBOOK -->
+  <meta property="og:title" content="S Y  R A S H I D" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.syrashid.com" />
+  <meta property="og:image:url" content="https://res.cloudinary.com/syrashid/image/upload/v1569254090/splash_wh8wup.jpg" />
+  <meta property="og:description" content="Full Stack Developer by trade, Engineer by education, Explorer by choice, Child at heart.  Come learn more about my work and let's see what we can build together!" />
+  <meta property="og:site_name" content="S Y  R A S H I D" />
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/721627a3c7.js"></script>
+
+  <!-- MAPBOX -->
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.3.1/mapbox-gl.css' rel='stylesheet' />
+
+</head>
+
+<body>
+  <!-- SPLASH PAGE -->
+  <a name="topofpage"></a>
+  <div class="splash">
+    <div class="splash-content">
+      <div class="navbar">
+        <img src="img/logo.png" alt="Sy Rashid Logo" class="logo">
+        <div class="menu">
+          <a href="#portfolio" class="tab">PORTFOLIO</a>
+          <a href="#about" class="tab">ABOUT</a>
+          <a href="#photos" class="tab">PHOTOS</a>
+          <a href="#funstuff" class="tab">FUN</a>
+          <a href="#connect" class="tab">CONNECT</a>
+          <!--  Hamburger icon, hidden by default -->
+          <div class="dropdown">
+            <div class="hamburger" onclick="dropDown(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#portfolio">PORTFOLIO</a>
+              <a href="#about">ABOUT</a>
+              <a href="#photos">PHOTOS</a>
+              <a href="#funstuff">FUN</a>
+              <a href="#connect">CONNECT</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <h1>i'm a <span class="splash-highlight">developer</span><br>i build nifty products </h1>
+    </div>
+  </div>
+
+  <!-- PORTFOLIO PAGE -->
+  <a name="portfolio"></a>
+  <div class="portfolio">
+    <!-- TO DO: Add sliding mobile gestures to this -->
+    <div class="slideshow-container">
+      <div class="myProjs fade">
+        <a href="https://www.baybe.store" target="blank" class="portfolio-link">
+          <img src="img/baybe.jpg">
+          <div class="portfolio-info">
+            <h4>BAYBE</h4>
+            <p>An online marketplace for parents to buy and sell quality, refurbished, certified baby goods. <!--  Check out the pitch here! --></p>
+            <!-- TO DO: drop in the pitch link once online -->
+          </div>
+        </a>
+      </div>
+      <!-- TO DO: Update Webkit animation from something more subtle than fade -->
+      <div class="myProjs fade">
+        <a href="http://usrus.herokuapp.com/" target="blank" class="portfolio-link">
+          <img src="img/lochness.jpg">
+          <div class="portfolio-info">
+            <h4>LOCH NESS</h4>
+            <p>An AirBnb model clone, but instead of renting flats we rent monsters!</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="myProjs fade">
+        <a href="https://batch275mrcocktail.herokuapp.com" target="blank" class="portfolio-link">
+          <img src="img/mixology.jpg">
+          <div class="portfolio-info">
+            <h4>MIXOLOGY</h4>
+            <p>Simple cocktail website using an MVC model.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="myProjs fade">
+        <a href="https://github.com/syrashid" target="blank" class="portfolio-link">
+          <img src="img/github.png">
+          <div class="portfolio-info">
+            <h4>GITHUB</h4>
+            <p>Check out more of my work on GitHub!</p>
+          </div>
+        </a>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div>
+      <h1>portfolio</h1>
+    </div>
+  </div>
+
+  <!-- ABOUT PAGE -->
+  <a name="about"></a>
+  <div class="about">
+    <div class = "about-content">
+      <img src="img/sy.jpg" alt="Photo of Sy Rashid" class="sy-photo">
+      <div class="storybox">
+        <div class="story-title speechbubble">
+          <h3>IT ALL STARTED WITH A LETTER .&nbsp.&nbsp.</h3>
+        </div>
+        <div class="story-content">
+          <p>
+            <br>
+            <i>
+              Dear Ms. Rashid,
+              <br>
+              <br>
+              I regret to inform you that Sy will be suspended for 1 week starting April 14, 2005 pending “The Incident”.  “The Incident” mentioned here involved Sy, a cantaloupe filled with gasoline, and an eager friend screaming “You won’t, you won’t!”.  Once the trees behind the school were put out, Sy was apprehended an hour later on the roof of his algebra trailer.
+              <br>
+              <br>
+              This is just the latest in a string of shenanigans where Sy demonstrates reckless behavior and disregard for school property.  Unless curbed soon, I’m afraid Sy will end up potentially endangering himself or others.
+              <br>
+              <br>
+              Sy is an intelligent student with a knack for creativity, perhaps you could introduce him to photography or writing as a means to channel some of his creative energy?  At the very least, get him involved with some of our afterschool clubs or sports teams.
+              <br>
+              <br>
+              He’s got the potential to do anything he sets his mind to, but always find trouble when he doesn’t have positive creative outlets or structure for his energy.  If you have any questions on the terms of his suspension or about any of the aforementioned activities, please do not hesitate to ask.
+              <br>
+              <br>
+              Cordially,
+              <br>
+              Principal Lauren Holt
+            </i>
+          </p>
+          <br>
+          <hr>
+          <br>
+          <p>
+            (Un)Fortunately, my friend’s eye brows grew back and I didn’t end up getting into too much more trouble growing up.
+            <br>
+            <br>
+            <strike>Un</strike>Fortunately, my shenanigans never stopped, I just got better at covering my tracks.
+            <br>
+            <br>
+            Now I spend most of my days building products as a freelance developer.  Not too long ago, I was launching alcohol brands as a serial “intrapreneur”, working for a big corporation, and by all definitions “successful”.  I had a 401K, owned a car, and did my own laundry, all the signs of a mature and successful adult.  And yet, as I’d stare from my WeWork hotdesk I just couldn’t help but feel something was off… so, I quit.
+            <br>
+            <br>
+            I moved to Barcelona, went back to school for coding, and walked out the other side with the realization that had been eluding me at that desk.  For the first time in my life, I wasn’t filling out someone else’s template for what my life should be, instead, I was architecting <b>what I wanted</b> my life to be.
+            <br>
+            <br>
+            Outside of coding I use my spare time telling stories.  Be it through the lens of a camera, the lines on a piece of paper, or over a beer with friends, telling stories and building/coding products brings me a fulfillment and joy I’ve been desperately seeking since my younger days.
+            <br>
+            <br>
+            I hope through the products, texts, images, or videos on this website you find something that makes you laugh, pulls at a heartstring, or makes you question.
+            <br>
+            <br>
+            If you ever want to work together, send feedback, or just grab a cup of coffee, just send me a message.  Can’t wait to talk soon!
+            <br>
+            <br>
+            Loyally,
+            <br>
+            <br>
+            <img src="img/signature.png" alt="">
+          </p>
+        </div>
+      </div>
+    </div>
+    <h1 class="about-highlight">about</h1>
+  </div>
+
+  <!-- PHOTOS PAGE -->
+  <a name="photos"></a>
+  <div class="photos">
+    <div class="photos-container">
+
+      <div class="myPhotos fade">
+        <img src="img/photos/10.jpg">
+      </div>
+
+      <div class="myPhotos fade">
+        <img src="img/photos/9.jpg">
+      </div>
+
+      <div class="myPhotos fade">
+        <img src="img/photos/8.jpg">
+      </div>
+
+      <div class="myPhotos fade">
+        <img src="img/photos/7.jpg">
+      </div>
+
+      <div class="myPhotos fade">
+        <img src="img/photos/6.jpg">
+      </div>
+
+      <div class="myPhotos fade">
+        <img src="img/photos/5.jpg">
+      </div>
+
+      <div class="myPhotos fade">
+        <img src="img/photos/4.jpg">
+      </div>
+
+      <div class="myPhotos fade">
+        <img src="img/photos/3.jpg">
+      </div>
+
+      <div class="myPhotos fade">
+        <img src="img/photos/2.jpg">
+      </div>
+
+      <div class="myPhotos fade">
+        <img src="img/photos/1.jpg">
+      </div>
+
+      <a class="prev" onclick="plusPhoto(-1)">&#10094;</a>
+      <a class="next" onclick="plusPhoto(1)">&#10095;</a>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentPhoto(1)"></span>
+        <span class="dot" onclick="currentPhoto(2)"></span>
+        <span class="dot" onclick="currentPhoto(3)"></span>
+        <span class="dot" onclick="currentPhoto(4)"></span>
+        <span class="dot" onclick="currentPhoto(5)"></span>
+        <span class="dot" onclick="currentPhoto(6)"></span>
+        <span class="dot" onclick="currentPhoto(7)"></span>
+        <span class="dot" onclick="currentPhoto(8)"></span>
+        <span class="dot" onclick="currentPhoto(9)"></span>
+        <span class="dot" onclick="currentPhoto(10)"></span>
+      </div>
+    </div>
+    <h1>photos</h1>
+  </div>
+
+  <!-- MISC PAGE -->
+  <a name="funstuff"></a>
+  <div class="misc">
+    <div class="misc-content">
+      <div class="mapbox" id="map"></div>
+      <br>
+      <button id='fly'><span>WHERE AM I NOW?</span></button>
+      <div class="misc-slideshow">
+        <div class="misc-container">
+
+          <!-- Full-width images with number and caption text -->
+          <a href="https://vimeo.com/347233285" target="_blank" class="misc-link">
+            <div class="myMisc fade">
+              <img src="img/kal.jpg" style="width:100%">
+              <div class="misc-info">
+                <h4>The 80s Dating Tape</h4>
+                <p>Kal is just a nice guy, looking for a nice gal, in a video world.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://medium.com/the-ascent/work-travel-are-not-mutually-exclusive-ddc476b0cee6" target="_blank" class="misc-link">
+            <div class="myMisc fade">
+              <img src="img/sm1.jpg" style="width:100%">
+              <div class="misc-info">
+                <h4>Work & Travel are not mutually exclusive</h4>
+                <p>The Santa Monica Series P1: A collection of anecdotes, stories, and ramblings while I waited for traffic to die down in Santa Monica, CA.</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://medium.com/@syrashid/trading-red-eyes-for-blue-skies-3ea850e9b3e0" target="_blank" class="misc-link">
+            <div class="myMisc fade">
+              <img src="img/sm2.jpg" style="width:100%">
+              <div class="misc-info">
+                <h4>Trading Red-Eyes for Blue Skies</h4>
+                <p>The Santa Monica Series P2: A collection of anecdotes, stories, and ramblings while I waited for traffic to die down in Santa Monica, CA.</p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusMisc(-1)">&#10094;</a>
+          <a class="next" onclick="plusMisc(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="miscdot" onclick="currentMisc(1)"></span>
+          <span class="miscdot" onclick="currentMisc(2)"></span>
+          <span class="miscdot" onclick="currentMisc(3)"></span>
+        </div>
+      </div>
+    </div>
+    <h1>fun stuff</h1>
+  </div>
+
+  <!-- CONNECT PAGE -->
+  <a name="connect"></a>
+  <div class="contact">
+    <a href="#topofpage"><img src="img/logo.png" alt="Sy Rashid Logo" class="logo"></a>
+    <h2>So let's build something together. &nbspAll it takes is one good cup of coffee and some paper.</h2>
+    <h3>CONNECT WITH ME</h3>
+    <div class="connect-bar">
+      <a href="mailto:sy.rashid.11@gmail.com"
+      method="post"
+      enctype="text/plain"
+      target="_blank"
+      class="tab">EMAIL</a>
+      <a href="https://www.linkedin.com/in/sy-rashid/"
+      target="_blank"
+      class="tab">LINKEDIN</a>
+      <a href="https://www.instagram.com/shy.radish/"
+      target="_blank"
+      class="tab">INSTAGRAM</a>
+      <a href="https://www.medium.com/@syrashid"
+      target="_blank"
+      class="tab">MEDIUM</a>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/mapbox.js"></script>
+</body>
+</html>

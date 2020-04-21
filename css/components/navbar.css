@@ -1,0 +1,97 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 6vw;
+}
+
+.menu .tab{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 1.5em;
+  font-size: 20px;
+}
+
+.menu .tab:hover{
+  color: rgba(0, 238, 175, 0.9);
+  transition: 0.35s ease-in-out;
+  border-bottom: 3px solid;
+  padding-bottom: 6px 0;
+}
+
+.dropdown {
+  display: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0,0,0, 0.4);
+  min-width: 160px;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  margin: 1.5em;
+}
+
+.dropdown-content a:hover {
+  color: rgba(0, 238, 175, 0.9);
+  transition: 0.35s ease-in-out;
+  border-bottom: 3px solid;
+  padding-bottom: 6px 0;
+}
+
+
+.hamburger div{
+  width: 36px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 8px 0px;
+  transition: 1s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-12px, 5px) ;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-14px, -8px) ;
+}
+
+.show {display:block;}
+
+@media screen and (max-width: 800px) {
+  .menu .tab {
+    display:none;
+    margin: 0;
+  }
+  .dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+  }
+  .hamburger:hover div{
+    background-color: rgba(0, 238, 175, 0.9);
+    transition: 0.35s ease-in-out;
+  }
+  .logo {
+    width: 48px;
+    height: 48px;
+  }
+}

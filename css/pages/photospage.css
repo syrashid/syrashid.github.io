@@ -1,0 +1,82 @@
+.photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 105vh;
+  padding: 5vh 4vw;
+  min-width: 320px;
+}
+
+.photos {
+  background-color: white;
+}
+
+.photos h1 {
+  color: rgba(0, 238, 175, 0.75);
+}
+
+
+.photos-container {
+  position: relative;
+  margin: auto;
+}
+
+.photos-container img {
+  object-fit: cover;
+  width: 92vw;
+  max-height: 70vh;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.myPhotos { display: none; }
+
+.dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.instagram-link {
+  text-decoration: none;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media screen and (max-width: 800px) {
+  .photos h1 { font-size: 54px; }
+  .photos { height: 85vh; }
+}
+
+@media screen and (max-width: 600px) {
+  .photos h1 { font-size: 40px; }
+  .photos { height: 70vh; }
+}
+
+@media screen and (max-width: 450px) {
+  .photos h1 { font-size: 36px; }
+  .photos { height: 60vh; }
+}

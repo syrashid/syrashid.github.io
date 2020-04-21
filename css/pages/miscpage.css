@@ -1,0 +1,184 @@
+.misc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgb(15,15,15);
+  height: 105vh;
+  padding: 5vh 4vw;
+  min-width: 300px;
+}
+
+.misc-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.misc-slideshow {
+  width: 50%;
+  max-height: 80vh;
+  padding-left: 4vw;
+}
+
+.misc h1 {
+  color: rgba(0, 238, 175, 1);
+  margin-top: 6vh;
+}
+
+
+.myMisc {display: none}
+
+/* Slideshow container */
+.misc-container {
+  position: relative;
+  margin: auto;
+}
+
+.misc-container img {
+  object-fit: cover;
+  height: 80vh;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text, default visibility hidden */
+.misc-info {
+    position: absolute;
+    bottom: 32px;
+    width: 100%;
+    padding: 1.5vh 2vw;
+    background: rgba(255, 255, 255, 0.8);
+    color: rgba(0,0,0,0.75);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 800ms, visibility 800ms;
+    transition: opacity 800ms, visibility 800ms;
+}
+
+.misc-info p{
+  font-weight: bolder;
+}
+
+/* Caption text appear upon hover */
+.misc-link:hover .misc-info{
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Remove link styling */
+.misc-link {
+  text-decoration: none;
+}
+
+.miscdot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .miscdot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@media screen and (max-width: 1000px) {
+  .misc h1 { font-size: 54px; }
+  .misc {
+    height: 180vh;
+  }
+  .misc-content {
+    flex-direction: column;
+  }
+  .misc-slideshow {
+    width: 100%;
+    margin-top: 8vh;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+.misc h1 {
+  font-size: 40px;
+  margin-top: 0;
+  }
+.misc-info {
+  visibility: visible;
+  opacity: 1;
+}
+.miscdot {
+  display: none;
+}
+.misc {
+  height: 150vh;
+}
+.misc-container img {
+  height: 60vh;
+}
+  .misc-info h4 {
+    font-size: 21px
+  }
+  .misc-info p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+.misc h1 {
+  font-size: 36px;
+  }
+  .misc-info h4 {
+    font-size: 18px
+  }
+  .misc {
+    height: 140vh;
+  }
+  .misc-info p {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,54 @@
+@import "components/map.css";
+@import "components/navbar.css";
+@import "components/speech_bubble.css";
+@import "pages/aboutpage.css";
+@import "pages/contactpage.css";
+@import "pages/miscpage.css";
+@import "pages/photospage.css";
+@import "pages/portfoliopage.css";
+@import "pages/splashpage.css";
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1, h2, h3, p {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+h4, h5, a {
+  font-family: 'Fjalla One', sans-serif;
+  margin: 0;
+  font-weight: lighter;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+img {
+  vertical-align: middle;
+}

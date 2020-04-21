@@ -1,0 +1,40 @@
+.splash {
+  height: 100vh;
+  display: flex;
+  min-width: 300px;
+  background-image: url("../../img/splash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.splash-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4vh 3vw 6vh 4vw;
+  flex-grow: 1;
+}
+
+.splash-content h1 {
+  color: rgba(255, 255, 255, 0.85)
+}
+
+.splash-highlight {
+  color: rgba(0, 238, 175, 0.9)
+}
+
+@media screen and (max-width: 800px) {
+.splash-content h1 { font-size: 54px; }
+.splash {
+  background-image: url("../../img/splashmobile.jpg");
+}
+}
+
+@media screen and (max-width: 600px) {
+.splash-content h1 { font-size: 40px; }
+}
+
+@media screen and (max-width: 450px) {
+.splash-content h1 { font-size: 36px; }
+.splash { background-attachment: scroll }
+}

@@ -1,0 +1,80 @@
+.contact {
+  background-color: rgb(15,15,15);
+  height: 100vh;
+  padding: 20vh 24vw 20vh 4vw;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact img {
+  margin-bottom: 8vh;
+}
+
+.contact h2 {
+  color: white;
+  margin-bottom: 12vh;
+}
+
+.contact h3 {
+  font-family: 'Fjalla One', sans-serif;
+  color: rgba(0, 238, 175, 1);
+  margin-bottom: 4vh;
+  font-weight: lighter;
+}
+
+.connect-bar a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.9);
+  margin-right: 3em;
+  font-size: 20px;
+}
+
+.connect-bar a:hover{
+  color: rgba(0, 238, 175, 0.9);
+  transition: 0.35s ease-in-out;
+  border-bottom: 3px solid;
+  padding-bottom: 6px;
+}
+
+
+@media screen and (max-width: 800px) {
+  .contact {
+    padding: 16vh 16vw 32vh 4vw;
+    height: 90vh;
+  }
+  .contact h2 { font-size: 28px; }
+  .contact h3 {
+    font-size: 20px;
+    margin-bottom: 2vh;
+    }
+  .connect-bar a {font-size: 16px;}
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    padding: 16vh 16vw 28vh 4vw;
+    height: 80vh;
+  }
+  .contact h2 { font-size: 21px; }
+  .contact h3 { font-size: 16px; }
+  .connect-bar a {
+    font-size: 12px;
+    margin-right: 2em;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .contact {
+    padding-top: 4vh;
+    padding-right: 8vh;
+    padding: 4vh 8vw 20vh 4vw;
+    height: 70vh;
+  }
+  .contact h2 { font-size: 18px; }
+  .connect-bar a {
+    margin-right: 1.5em;
+  }
+}

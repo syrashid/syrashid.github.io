@@ -1,0 +1,69 @@
+.mapbox {
+  width: 46%;
+  height: 80vh;
+}
+
+#map {
+  position: absolute;
+}
+
+#fly {
+  position: relative;
+  top: 0vh;
+  margin: 0px auto;
+  width: 50%;
+  height: 6vh;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 3vh;
+  text-align: center;
+  color: #343a40;
+  background: #00eeaf;
+  font-family: 'Fjalla One', sans-serif;
+  z-index:2;
+  transition: all 0.4s;
+}
+
+#fly span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.4s;
+}
+
+#fly span:after {
+ content: '\00bb';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -20px;
+ transition: 0.5s;
+ font-size: 3vh;
+}
+#fly:hover span {
+ padding-right: 25px;
+}
+#fly:hover span:after {
+ opacity: 1;
+ right: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  #map {
+    position: relative;
+  }
+  #fly {
+    width: 100%;
+  }
+  .mapbox {
+    width: 100%;
+    height: 60vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .mapbox {
+    height: 40vh;
+  }
+}
